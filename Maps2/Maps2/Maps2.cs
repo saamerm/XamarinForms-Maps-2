@@ -8,23 +8,21 @@ namespace Maps2
 	{
 		public App()
 		{
-			// The root page of your application
-			var content = new ContentPage
-			{
-				Title = "Maps2",
-				Content = new StackLayout
-				{
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							HorizontalTextAlignment = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
+			var tabs = new TabbedPage();
 
-			MainPage = new NavigationPage(content);
+			// demonstrates the map control with zooming and map-types
+			tabs.Children.Add(new MapPage { Title = "Map/Zoom", Icon = "glyphish_74_location.png" });
+
+			// demonstrates the map control with zooming and map-types
+			tabs.Children.Add(new PinPage { Title = "Pins", Icon = "glyphish_07_map_marker.png" });
+
+			// demonstrates the Geocoder class
+			tabs.Children.Add(new GeocoderPage { Title = "Geocode", Icon = "glyphish_13_target.png" });
+
+			// opens the platform's native Map app
+			tabs.Children.Add(new MapAppPage { Title = "Map App", Icon = "glyphish_103_map.png" });
+
+			MainPage = tabs;
 		}
 
 		protected override void OnStart()
