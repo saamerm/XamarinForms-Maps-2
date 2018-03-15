@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.tfp.Maps2">
     <uses-sdk android:minSdkVersion="15" />
     <application android:label="Maps2">
-        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAttdHMG-YIASWeyX4Gcy0rOwewdXGrDf4" />
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCknpjn0e6jhjxUgkZCDYED4hi7tbxrRvg" />
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
